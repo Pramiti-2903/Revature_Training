@@ -1,0 +1,460 @@
+Python 3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+5>6 and 3<7
+False
+not 6
+False
+not -6
+False
+not 0
+True
+7&9
+1
+7|9
+15
+77^9
+68
+7^9
+14
+5<<3
+40
+5>>2
+1
+5<<<3
+SyntaxError: invalid syntax
+5>>>3
+SyntaxError: invalid syntax
+num1=10
+type(num1)
+<class 'int'>
+num1 is int
+False
+type(num1)is int
+True
+type(5)is int
+True
+type(num1)is not str
+True
+print(num1)
+10
+print('hi')
+hi
+'hi'
+'hi'
+print(hi)
+Traceback (most recent call last):
+  File "<pyshell#21>", line 1, in <module>
+    print(hi)
+NameError: name 'hi' is not defined
+print(num1+'10')
+Traceback (most recent call last):
+  File "<pyshell#22>", line 1, in <module>
+    print(num1+'10')
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+print('hi'+'10')
+hi10
+print('hi'+10)
+Traceback (most recent call last):
+  File "<pyshell#24>", line 1, in <module>
+    print('hi'+10)
+TypeError: can only concatenate str (not "int") to str
+print('sum: ' num1+10)
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+print('sum: ', num1+10)
+sum:  20
+print(num1+10)
+20
+print(num1+'10')
+Traceback (most recent call last):
+  File "<pyshell#28>", line 1, in <module>
+    print(num1+'10')
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+print('sum: '+'\n', num1+10)
+sum: 
+ 20
+input()
+5
+'5'
+input()
+hi
+'hi'
+KeyboardInterrupt
+KeyboardInterrupt
+input()
+True
+'True'
+KeyboardInterrupt
+input('Enter a number')
+Enter a number
+''
+input('Enter a number')
+Enter a number12
+'12'
+input('Enter a number :')
+Enter a number : 5
+' 5'
+int(input('Enter a number :'))
+Enter a number : 5
+5
+float(input('Enter a number :'))
+Enter a number : 5
+5.0
+bool (input('Enter a number :'))
+Enter a number : 0
+True
+bool (input('Enter a number :'))
+Enter a number :-9
+True
+bool (input('Enter a number :'))
+Enter a number :5
+True
+bool (input('Enter a number :'))
+Enter a number :
+False
+Ram's house
+SyntaxError: unterminated string literal (detected at line 1)
+"Ram's house"
+"Ram's house"
+'Ram"s house'
+'Ram"s house'
+str1='hello there!'
+str1
+'hello there!'
+len(str1)
+12
+str1[10]
+'e'
+str1[0]
+'h'
+str1[-1]
+'!'
+str1[-13]
+Traceback (most recent call last):
+  File "<pyshell#51>", line 1, in <module>
+    str1[-13]
+IndexError: string index out of range
+str1[13]
+Traceback (most recent call last):
+  File "<pyshell#52>", line 1, in <module>
+    str1[13]
+IndexError: string index out of range
+str1[12]
+Traceback (most recent call last):
+  File "<pyshell#53>", line 1, in <module>
+    str1[12]
+IndexError: string index out of range
+str1[11]
+'!'
+str1[-12]
+'h'
+str1[0:3]
+'hel'
+str1[0:]
+'hello there!'
+str1[0:12:1]
+'hello there!'
+str1[0:12:2]
+'hlotee'
+str1[0:12,2]
+Traceback (most recent call last):
+  File "<pyshell#60>", line 1, in <module>
+    str1[0:12,2]
+TypeError: string indices must be integers
+str1[0:12:3]
+'hltr'
+str1[0::3]
+'hltr'
+str1[0::3]
+'hltr'
+str1[::3]
+'hltr'
+str1[-3:-6]
+''
+str1[-6:-3]
+'the'
+str1[-10:-1:2]
+'lotee'
+str1
+'hello there!'
+str1.capitalize()
+'Hello there!'
+str1.upper()
+'HELLO THERE!'
+str1.lower()
+'hello there!'
+str1.count()
+Traceback (most recent call last):
+  File "<pyshell#72>", line 1, in <module>
+    str1.count()
+TypeError: count() takes at least 1 argument (0 given)
+str1.count('h')
+2
+str1.count('i')
+0
+str1.count('e')
+3
+str1.endswith('!')
+True
+str1.endswith(!)
+SyntaxError: invalid syntax
+SyntaxError: invalid syntax
+SyntaxError: invalid syntax
+str1.endswith('i')
+False
+str1.find('t')
+6
+str1.find('i')
+-1
+str1.index('o')
+4
+str1.index('l')
+2
+str1.encode('utf-8')
+b'hello there!'
+str1.encode('utf-16')
+b'\xff\xfeh\x00e\x00l\x00l\x00o\x00 \x00t\x00h\x00e\x00r\x00e\x00!\x00'
+str1.replace('o','0')
+'hell0 there!'
+str1.replace('e','1')
+'h1llo th1r1!'
+str1.split()
+['hello', 'there!']
+str1.split('l')
+['he', '', 'o there!']
+str1.split('e')
+['h', 'llo th', 'r', '!']
+str2='10-12-2025'
+str2.split('-')
+['10', '12', '2025']
+str2.join('str1')
+'s10-12-2025t10-12-2025r10-12-20251'
+str1.join('str2')
+'shello there!thello there!rhello there!2'
+str1.join(str2)
+'1hello there!0hello there!-hello there!1hello there!2hello there!-hello there!2hello there!0hello there!2hello there!5'
+str1.strip()
+'hello there!'
+str1.strip('e')
+'hello there!'
+str3='     hi     '
+str3
+'     hi     '
+str3.strip()
+'hi'
+str1='hello'
+str1
+'hello'
+str1='hi'
+str1
+'hi'
+id(str1)
+2346934748720
+str1=('india')
+id(str1)
+2346965408752
+numbers=[10,20,30]
+numbers
+[10, 20, 30]
+id(numbers)
+2346966727040
+numbers.append(40)
+numbers
+[10, 20, 30, 40]
+id(numbers)
+2346966727040
+numbers[30]
+Traceback (most recent call last):
+  File "<pyshell#114>", line 1, in <module>
+    numbers[30]
+IndexError: list index out of range
+numbers[3]
+40
+numbers.append(50)
+numbers
+[10, 20, 30, 40, 50]
+numbers[2]= 15
+numbers
+[10, 20, 15, 40, 50]
+numbers.append(15)
+numbers
+[10, 20, 15, 40, 50, 15]
+numbers.count(15)
+2
+numbers.count(18)
+0
+numbers.index(15)
+2
+numbers.insert(3,30)
+numbers
+[10, 20, 15, 30, 40, 50, 15]
+numbers.remove(15)
+numbers
+[10, 20, 30, 40, 50, 15]
+numbers.remove(25)
+Traceback (most recent call last):
+  File "<pyshell#129>", line 1, in <module>
+    numbers.remove(25)
+ValueError: list.remove(x): x not in list
+numbers.pop()
+15
+numbers.pop(-4)
+20
+numbers
+[10, 30, 40, 50]
+[10, 30, 40, 50]
+[10, 30, 40, 50]
+numbers
+[10, 30, 40, 50]
+numbers.reverse()
+numbers
+[50, 40, 30, 10]
+numbers.sort()
+numbers
+[10, 30, 40, 50]
+numbers.sort(reverse=True)
+numbers
+[50, 40, 30, 10]
+nums=numbers.copy()
+nums
+[50, 40, 30, 10]
+id(numbers)
+2346966727040
+id(nums)
+2346966781120
+nums1=numbers
+id(nums1)
+2346966727040
+numbers.extend(nums)
+numbers
+[50, 40, 30, 10, 50, 40, 30, 10]
+numbers.clear
+<built-in method clear of list object at 0x00000222721E3980>
+numbers.clear()
+numbers
+[]
+del(numbers)
+number
+Traceback (most recent call last):
+  File "<pyshell#153>", line 1, in <module>
+    number
+NameError: name 'number' is not defined
+tup1=(10,20,30)
+tup1
+(10, 20, 30)
+tup1[2]
+30
+tup1.count(20)
+1
+tup1.clear(10)
+Traceback (most recent call last):
+  File "<pyshell#158>", line 1, in <module>
+    tup1.clear(10)
+AttributeError: 'tuple' object has no attribute 'clear'
+tup1.index(20)
+1
+del(tup1)
+tup1
+Traceback (most recent call last):
+  File "<pyshell#161>", line 1, in <module>
+    tup1
+NameError: name 'tup1' is not defined. Did you mean: 'tuple'?
+set1={1,11,111,1111,11111}
+set1
+{1, 1111, 11111, 11, 111}
+set1[1]
+Traceback (most recent call last):
+  File "<pyshell#164>", line 1, in <module>
+    set1[1]
+TypeError: 'set' object is not subscriptable
+set1.add(10)
+set1
+{1, 1111, 11111, 10, 11, 111}
+set2={1,2,3,4,}
+set2
+{1, 2, 3, 4}
+set1.union(set2)
+{1, 2, 3, 4, 11111, 10, 11, 111, 1111}
+set1
+{1, 1111, 11111, 10, 11, 111}
+set2
+{1, 2, 3, 4}
+set1.union(set2)
+{1, 2, 3, 4, 11111, 10, 11, 111, 1111}
+set1={1,2,3,4}
+set1.union(set2)
+{1, 2, 3, 4}
+set1={1,11,111,1111,11111}
+set2={1,2,3,4}
+set3=set1.union(set2)
+sett3
+Traceback (most recent call last):
+  File "<pyshell#178>", line 1, in <module>
+    sett3
+NameError: name 'sett3' is not defined. Did you mean: 'set3'?
+set3
+{1, 2, 3, 4, 11111, 11, 111, 1111}
+set3.intersection(set2)
+{1, 2, 3, 4}
+set4=set3.intersection(set1)
+set4
+{1, 11111, 11, 111, 1111}
+set5=set2.difference(set4)
+set5
+{2, 3, 4}
+set5=set1.difference(set4)
+set5
+set()
+set4=set1.difference(set5)
+set4
+{1, 1111, 11111, 11, 111}
+dict1={1:10,2:20}
+dict1
+{1: 10, 2: 20}
+dict[2]
+dict[2]
+dict1[2]
+20
+dict1[2]=200
+dict1
+{1: 10, 2: 200}
+dict2={'rno':'123', 'name':'AA'}
+dict2
+{'rno': '123', 'name': 'AA'}
+dict2['rno']
+'123'
+dict2['rno']=1123
+dict2['rno']
+1123
+dict2={'rno':123, 'name':'AA'}
+dict2
+{'rno': 123, 'name': 'AA'}
+dict2['ph']=123456789
+dictt2
+Traceback (most recent call last):
+  File "<pyshell#203>", line 1, in <module>
+    dictt2
+NameError: name 'dictt2' is not defined. Did you mean: 'dict2'?
+dict2
+{'rno': 123, 'name': 'AA', 'ph': 123456789}
+dict2{'ph':123456789}
+SyntaxError: invalid syntax
+dict2['ph':123456789]
+Traceback (most recent call last):
+  File "<pyshell#206>", line 1, in <module>
+    dict2['ph':123456789]
+TypeError: unhashable type: 'slice'
+dict1.get('ph')
+ph=dict1.get('ph')
+ph=dict2.get('ph')
+ph
+123456789
+ph=dict1.get('ph')
+ph
+dict2.keys()
+dict_keys(['rno', 'name', 'ph'])
+dict2.values()
+dict_values([123, 'AA', 123456789])
+dict1.pop(2)
+200
+dict1
+{1: 10}
